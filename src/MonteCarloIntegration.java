@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 /**
  * Created by Michael Sloma on 3/3/2017.
+ * Integral evaluation tool, utilizes FunctionEvaluation to evaluate different points on the curve
  */
 public class MonteCarloIntegration {
 
@@ -20,7 +21,6 @@ public class MonteCarloIntegration {
         //input upper limit
         System.out.print("Please enter upper limit: ");
         double upperLimit = in.nextDouble();
-        System.out.println();
 
         return upperLimit;
     }
@@ -30,7 +30,6 @@ public class MonteCarloIntegration {
         //input lower limit
         System.out.print("Please enter lower limit: ");
         double lowerLimit = in.nextDouble();
-        System.out.println();
 
         return lowerLimit;
     }
@@ -40,7 +39,6 @@ public class MonteCarloIntegration {
         //input function
         System.out.print("Please enter function: ");
         String function = in.next();
-        System.out.println();
 
         return function;
     }
@@ -50,7 +48,6 @@ public class MonteCarloIntegration {
         //input number of subsections
         System.out.print("Please enter number of subsections: ");
         double subsections = in.nextDouble();
-        System.out.println();
 
         return subsections;
     }

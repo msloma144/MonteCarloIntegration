@@ -9,7 +9,7 @@ public class Tester {
         double upperLimit = MonteCarloIntegration.inputUpperLimit();
         double subsections = MonteCarloIntegration.inputSubesctions();
         //String function = MonteCarloIntegration.inputFunction();
-        String function = "x+x^2";
+        String function = "3+6x-x^2";
         ArrayList<Double> samplePoints = MonteCarloIntegration.generatePoints(lowerLimit, upperLimit, subsections);
 
         System.out.println("Area: " + MonteCarloIntegration.integration(samplePoints, upperLimit, lowerLimit, function));
